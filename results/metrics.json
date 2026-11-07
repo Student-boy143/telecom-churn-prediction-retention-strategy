@@ -1,0 +1,1097 @@
+{
+  "data": {
+    "customers": 100000,
+    "sample_churn_rate": 0.49562,
+    "train_size": 80000,
+    "test_size": 20000,
+    "n_features": 99
+  },
+  "hypothesis_validation": {
+    "churn_month9": 0.2879980324643384,
+    "churn_month11": 0.6512641673931997,
+    "window_OR_M3": 1.921849626004194,
+    "handset_OR_per_year_M3": 1.3364660561002832
+  },
+  "cv_logreg": {
+    "train ROC-AUC": 0.6609124956441977,
+    "val ROC-AUC": 0.6554667029194423,
+    "val PR-AUC": 0.6379805147589638,
+    "val Precision@0.5": 0.6104328889360768,
+    "val Recall@0.5": 0.5964186633039092,
+    "val F1@0.5": 0.6033353264237207,
+    "val Accuracy@0.5": 0.6113375,
+    "val Precision top20%": 0.6836249999999999,
+    "val Recall top20%": 0.2758638083228247,
+    "val Lift top20%": 1.3793190416141237
+  },
+  "cv_lgbm_default": {
+    "train ROC-AUC": 0.8064839061896928,
+    "val ROC-AUC": 0.6947284526471558,
+    "val PR-AUC": 0.6809641371566557,
+    "val Precision@0.5": 0.6323708838616884,
+    "val Recall@0.5": 0.6448675914249684,
+    "val F1@0.5": 0.6385437267556162,
+    "val Accuracy@0.5": 0.638175,
+    "val Precision top20%": 0.7300625000000001,
+    "val Recall top20%": 0.29460277427490544,
+    "val Lift top20%": 1.473013871374527
+  },
+  "cv_lgbm_conservative": {
+    "train ROC-AUC": 0.7608975413742615,
+    "val ROC-AUC": 0.6936488949935229,
+    "val PR-AUC": 0.6787378598271431,
+    "val Precision@0.5": 0.6321018900970717,
+    "val Recall@0.5": 0.643203026481715,
+    "val F1@0.5": 0.6375883439225405,
+    "val Accuracy@0.5": 0.6376,
+    "val Precision top20%": 0.7289375,
+    "val Recall top20%": 0.2941488020176545,
+    "val Lift top20%": 1.4707440100882725
+  },
+  "cv_lgbm_conservative_sd": {
+    "train ROC-AUC": 0.0007162112905883359,
+    "val ROC-AUC": 0.0043244137901521365,
+    "val PR-AUC": 0.006498149019187158,
+    "val Precision@0.5": 0.003616435064572668,
+    "val Recall@0.5": 0.004713805319980188,
+    "val F1@0.5": 0.00222939222871069,
+    "val Accuracy@0.5": 0.002590773894997423,
+    "val Precision top20%": 0.010907548275162458,
+    "val Recall top20%": 0.004401532721377042,
+    "val Lift top20%": 0.022007663606885153
+  },
+  "test_lgbm_conservative": {
+    "ROC-AUC": 0.6948560096493872,
+    "PR-AUC": 0.6829397012937859,
+    "Precision@0.5": 0.6330193356470005,
+    "Recall@0.5": 0.6440677966101694,
+    "F1@0.5": 0.6384957743661549,
+    "Accuracy@0.5": 0.63855,
+    "Precision top20%": 0.73825,
+    "Recall top20%": 0.29792171105730425,
+    "Lift top20%": 1.4896085552865213
+  },
+  "confusion_test": [
+    [
+      6387,
+      3701
+    ],
+    [
+      3528,
+      6384
+    ]
+  ],
+  "financial_designA_medium": {
+    "list size": 10766.937791662584,
+    "share of base": 0.10766937791662584,
+    "would-be churners": 595.8434221146083,
+    "list precision": 0.05534010074582225,
+    "value per saved customer": 270.15535006998874,
+    "monthly revenue at risk": 33231.72686308091,
+    "customers retained": 59.584342211460836,
+    "benefit (profit protected)": 16097.02882882721,
+    "cost": 344542.0093332027,
+    "net benefit": -328444.9805043755,
+    "ROI": -0.9532799240940748,
+    "break-even uplift": 2.1404074813867697,
+    "break-even offer cost": -1.0099151420207888,
+    "max feasible uplift": 1.0
+  },
+  "financial_designB_medium_10usd_20pct": {
+    "list size": 2002.4816321775954,
+    "share of base": 0.020024816321775954,
+    "would-be churners": 108.1517352703793,
+    "list precision": 0.05400885258196844,
+    "value per saved customer": 688.0299377058556,
+    "monthly revenue at risk": 15362.009012657383,
+    "customers retained": 21.630347054075862,
+    "benefit (profit protected)": 14882.326336171853,
+    "cost": 14017.371425243167,
+    "net benefit": 864.9549109286854,
+    "ROI": 0.06170592792961399,
+    "break-even uplift": 0.18837607923129074,
+    "break-even offer cost": 10.863882991014595,
+    "max feasible uplift": 1.0
+  },
+  "designB_breakeven_10usd_by_churn": {
+    "0.01": 0.35217878060538466,
+    "0.02": 0.18837607923129074,
+    "0.027": 0.14565705897380737
+  },
+  "designB_breakeven_35_60usd_medium": {
+    "35": 0.5247619350014527,
+    "60": 0.8611477907716149
+  },
+  "designB_heatmap_net": {
+    "u5_o0": -284.3816803122277,
+    "u5_o5": -5290.585760756217,
+    "u5_o10": -10296.789841200203,
+    "u5_o20": -20309.198002088182,
+    "u5_o35": -35327.81024342014,
+    "u5_o60": -60358.83064564009,
+    "u5_o100": -100408.463289192,
+    "u10_o0": 3436.1999037307355,
+    "u10_o5": -1570.0041767132534,
+    "u10_o10": -6576.208257157241,
+    "u10_o20": -16588.616418045218,
+    "u10_o35": -31607.22865937718,
+    "u10_o60": -56638.249061597126,
+    "u10_o100": -96687.88170514903,
+    "u15_o0": 7156.781487773696,
+    "u15_o5": 2150.577407329707,
+    "u15_o10": -2855.6266731142805,
+    "u15_o20": -12868.03483400226,
+    "u15_o35": -27886.647075334222,
+    "u15_o60": -52917.66747755417,
+    "u15_o100": -92967.30012110608,
+    "u20_o0": 10877.363071816662,
+    "u20_o5": 5871.158991372673,
+    "u20_o10": 864.9549109286854,
+    "u20_o20": -9147.453249959293,
+    "u20_o35": -24166.065491291254,
+    "u20_o60": -49197.085893511205,
+    "u20_o100": -89246.7185370631,
+    "u30_o0": 18318.52623990258,
+    "u30_o5": 13312.322159458594,
+    "u30_o10": 8306.118079014606,
+    "u30_o20": -1706.2900818733724,
+    "u30_o35": -16724.902323205333,
+    "u30_o60": -41755.92272542528,
+    "u30_o100": -81805.55536897719,
+    "u40_o0": 25759.689407988513,
+    "u40_o5": 20753.485327544528,
+    "u40_o10": 15747.281247100538,
+    "u40_o20": 5734.873086212559,
+    "u40_o35": -9283.739155119401,
+    "u40_o60": -34314.75955733935,
+    "u40_o100": -74364.39220089125
+  },
+  "designA_vs_random_medium": {
+    "model_be_u": 2.1404074813867697
+  },
+  "pilot": [
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028018677206790674,
+      "uplift to detect": 0.1,
+      "customers per arm": 51805,
+      "months of 2% lists needed (50/50 split)": 51.805,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028018677206790674,
+      "uplift to detect": 0.2,
+      "customers per arm": 12285,
+      "months of 2% lists needed (50/50 split)": 12.285,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028018677206790674,
+      "uplift to detect": 0.3,
+      "customers per arm": 5162,
+      "months of 2% lists needed (50/50 split)": 5.162,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05400885258196844,
+      "uplift to detect": 0.1,
+      "customers per arm": 26192,
+      "months of 2% lists needed (50/50 split)": 26.192,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05400885258196844,
+      "uplift to detect": 0.2,
+      "customers per arm": 6218,
+      "months of 2% lists needed (50/50 split)": 6.218,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05400885258196844,
+      "uplift to detect": 0.3,
+      "customers per arm": 2616,
+      "months of 2% lists needed (50/50 split)": 2.616,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07159542664408847,
+      "uplift to detect": 0.1,
+      "customers per arm": 19409,
+      "months of 2% lists needed (50/50 split)": 19.409,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07159542664408847,
+      "uplift to detect": 0.2,
+      "customers per arm": 4612,
+      "months of 2% lists needed (50/50 split)": 4.612,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07159542664408847,
+      "uplift to detect": 0.3,
+      "customers per arm": 1941,
+      "months of 2% lists needed (50/50 split)": 1.941,
+      "months of 10% risk lists needed (50/50 split)": NaN
+    },
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028577748684605574,
+      "uplift to detect": 0.1,
+      "customers per arm": 50763,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 10.1526
+    },
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028577748684605574,
+      "uplift to detect": 0.2,
+      "customers per arm": 12038,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 2.4076
+    },
+    {
+      "churn c": 0.01,
+      "control churn on list": 0.028577748684605574,
+      "uplift to detect": 0.3,
+      "customers per arm": 5058,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 1.0116
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05630274156171794,
+      "uplift to detect": 0.1,
+      "customers per arm": 25067,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 5.0134
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05630274156171794,
+      "uplift to detect": 0.2,
+      "customers per arm": 5952,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 1.1904
+    },
+    {
+      "churn c": 0.02,
+      "control churn on list": 0.05630274156171794,
+      "uplift to detect": 0.3,
+      "customers per arm": 2504,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 0.5008
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07494696319177241,
+      "uplift to detect": 0.1,
+      "customers per arm": 18478,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 3.6956
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07494696319177241,
+      "uplift to detect": 0.2,
+      "customers per arm": 4391,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 0.8782
+    },
+    {
+      "churn c": 0.027,
+      "control churn on list": 0.07494696319177241,
+      "uplift to detect": 0.3,
+      "customers per arm": 1849,
+      "months of 2% lists needed (50/50 split)": NaN,
+      "months of 10% risk lists needed (50/50 split)": 0.3698
+    }
+  ],
+  "calibration_comparison": [
+    {
+      "churn c": 0.01,
+      "ranking": "OLD: raw p x revenue",
+      "list size": 2006.4399387088538,
+      "would-be churners": 33.89830508474575,
+      "list precision": 0.016894751958814846,
+      "monthly revenue at risk": 6942.982748194108,
+      "value per saved customer": 1047.1690048706491,
+      "net benefit": -6945.628690483003,
+      "ROI": -0.4945239829643259,
+      "break-even uplift": 0.3956666454184808,
+      "overlap with other list": 0.6444237202323881
+    },
+    {
+      "churn c": 0.01,
+      "ranking": "CORRECTED: adjusted p x revenue",
+      "list size": 2009.209753203288,
+      "would-be churners": 56.29539951573848,
+      "list precision": 0.028018677206790674,
+      "monthly revenue at risk": 7811.086645823245,
+      "value per saved customer": 709.3935357436962,
+      "net benefit": -6077.349770708277,
+      "ROI": -0.43210661455467,
+      "break-even uplift": 0.35217878060538466,
+      "overlap with other list": 0.6435353440148175
+    },
+    {
+      "churn c": 0.02,
+      "ranking": "OLD: raw p x revenue",
+      "list size": 2000.782780618531,
+      "would-be churners": 67.59483454398706,
+      "list precision": 0.03378419446567332,
+      "monthly revenue at risk": 13832.780468139628,
+      "value per saved customer": 991.2627522560247,
+      "net benefit": -604.631118657071,
+      "ROI": -0.043171040320111445,
+      "break-even uplift": 0.2090237737650739,
+      "overlap with other list": 0.6630789662509146
+    },
+    {
+      "churn c": 0.02,
+      "ranking": "CORRECTED: adjusted p x revenue",
+      "list size": 2002.4816321775954,
+      "would-be churners": 108.1517352703793,
+      "list precision": 0.05400885258196844,
+      "monthly revenue at risk": 15362.009012657383,
+      "value per saved customer": 688.0299377058556,
+      "net benefit": 864.9549109286854,
+      "ROI": 0.06170592792961399,
+      "break-even uplift": 0.18837607923129074,
+      "overlap with other list": 0.6625164278897645
+    },
+    {
+      "churn c": 0.027,
+      "ranking": "OLD: raw p x revenue",
+      "list size": 2000.987364461504,
+      "would-be churners": 91.25302663438256,
+      "list precision": 0.04560399943301997,
+      "monthly revenue at risk": 18674.2536319885,
+      "value per saved customer": 954.8765816007289,
+      "net benefit": 3420.1640754413675,
+      "ROI": 0.24417688816924818,
+      "break-even uplift": 0.16074884680930798,
+      "overlap with other list": 0.6728833312659935
+    },
+    {
+      "churn c": 0.027,
+      "ranking": "CORRECTED: adjusted p x revenue",
+      "list size": 2005.0619920006604,
+      "would-be churners": 143.55326876513317,
+      "list precision": 0.07159542664408847,
+      "monthly revenue at risk": 20651.092917692797,
+      "value per saved customer": 671.2452444825516,
+      "net benefit": 5236.455853699628,
+      "ROI": 0.37308827604410716,
+      "break-even uplift": 0.14565705897380737,
+      "overlap with other list": 0.6715159177081315
+    }
+  ],
+  "stress_test": [
+    {
+      "design": "Design B, $10 action",
+      "monthly churn after save": 0.05400885258196844,
+      "H_eff (base)": 10.764163813259998,
+      "H_eff (stress)": 9.00549629409943,
+      "net (base)": 864.9549109286854,
+      "net (stress)": -1566.545054236436,
+      "break-even uplift (base)": 0.18837607923129074,
+      "break-even uplift (stress)": 0.22516371215141717
+    },
+    {
+      "design": "Design A, $60 offer",
+      "monthly churn after save": 0.05534010074582225,
+      "H_eff (base)": 10.764163813259998,
+      "H_eff (stress)": 8.944386982240882,
+      "net (base)": -312347.9516755483,
+      "net (stress)": -317790.6410695654,
+      "break-even uplift (base)": 2.1404074813867697,
+      "break-even uplift (stress)": 2.575883266513385
+    }
+  ],
+  "segments": [
+    {
+      "segment": "1 Data-quality review",
+      "customers": 40,
+      "actual_churn": 0.825,
+      "mean_pred": 0.8282635920739292,
+      "mean_monthly_rev": 65.125,
+      "total_monthly_rev": 2605.0,
+      "share_of_top20": 0.01
+    },
+    {
+      "segment": "2 Likely inactive",
+      "customers": 281,
+      "actual_churn": 0.8362989323843416,
+      "mean_pred": 0.8261203628508539,
+      "mean_monthly_rev": 24.27174673782918,
+      "total_monthly_rev": 6820.36083333,
+      "share_of_top20": 0.07025
+    },
+    {
+      "segment": "3 Renewal window",
+      "customers": 1352,
+      "actual_churn": 0.7588757396449705,
+      "mean_pred": 0.7166087362847913,
+      "mean_monthly_rev": 60.31578217463018,
+      "total_monthly_rev": 81546.9375001,
+      "share_of_top20": 0.338
+    },
+    {
+      "segment": "4 Ageing handset",
+      "customers": 1906,
+      "actual_churn": 0.710912906610703,
+      "mean_pred": 0.711571831664568,
+      "mean_monthly_rev": 53.24408709340818,
+      "total_monthly_rev": 101483.230000036,
+      "share_of_top20": 0.4765
+    },
+    {
+      "segment": "5 Service quality",
+      "customers": 133,
+      "actual_churn": 0.7819548872180451,
+      "mean_pred": 0.7152370432861465,
+      "mean_monthly_rev": 73.90555137842105,
+      "total_monthly_rev": 9829.43833333,
+      "share_of_top20": 0.03325
+    },
+    {
+      "segment": "6 Other high risk",
+      "customers": 288,
+      "actual_churn": 0.6944444444444444,
+      "mean_pred": 0.6993423906139875,
+      "mean_monthly_rev": 83.69798032396875,
+      "total_monthly_rev": 24105.018333303,
+      "share_of_top20": 0.072
+    }
+  ],
+  "decile_test": [
+    {
+      "risk_decile": 1,
+      "customers": 2000,
+      "actual_churn": 0.8005,
+      "mean_pred": 0.7746065364131749,
+      "mean_monthly_rev": 53.672365768998475,
+      "lift": 1.6152138821630346
+    },
+    {
+      "risk_decile": 2,
+      "customers": 2000,
+      "actual_churn": 0.676,
+      "mean_pred": 0.6688526753406439,
+      "mean_monthly_rev": 59.3161491800753,
+      "lift": 1.364003228410008
+    },
+    {
+      "risk_decile": 3,
+      "customers": 2000,
+      "actual_churn": 0.6105,
+      "mean_pred": 0.6123539836540591,
+      "mean_monthly_rev": 59.3197785021665,
+      "lift": 1.2318401937046006
+    },
+    {
+      "risk_decile": 4,
+      "customers": 2000,
+      "actual_churn": 0.559,
+      "mean_pred": 0.5664139108597803,
+      "mean_monthly_rev": 57.79123413491984,
+      "lift": 1.1279257465698145
+    },
+    {
+      "risk_decile": 5,
+      "customers": 2000,
+      "actual_churn": 0.5245,
+      "mean_pred": 0.5234131975759119,
+      "mean_monthly_rev": 55.75229312643994,
+      "lift": 1.0583131557707828
+    },
+    {
+      "risk_decile": 6,
+      "customers": 2000,
+      "actual_churn": 0.481,
+      "mean_pred": 0.4800124135982545,
+      "mean_monthly_rev": 57.29865807905102,
+      "lift": 0.9705407586763519
+    },
+    {
+      "risk_decile": 7,
+      "customers": 2000,
+      "actual_churn": 0.427,
+      "mean_pred": 0.43460715216123375,
+      "mean_monthly_rev": 60.37594755714858,
+      "lift": 0.8615819209039548
+    },
+    {
+      "risk_decile": 8,
+      "customers": 2000,
+      "actual_churn": 0.3675,
+      "mean_pred": 0.38150250233939403,
+      "mean_monthly_rev": 61.51495991985972,
+      "lift": 0.7415254237288136
+    },
+    {
+      "risk_decile": 9,
+      "customers": 2000,
+      "actual_churn": 0.319,
+      "mean_pred": 0.313064888985191,
+      "mean_monthly_rev": 64.37904433872244,
+      "lift": 0.6436642453591607
+    },
+    {
+      "risk_decile": 10,
+      "customers": 2000,
+      "actual_churn": 0.191,
+      "mean_pred": 0.2096248327584265,
+      "mean_monthly_rev": 55.79854062397548,
+      "lift": 0.38539144471347864
+    }
+  ],
+  "rev_mean": 58.71998484590209,
+  "rev_median": 48.195,
+  "tpr20": 0.29792171105730425,
+  "fpr20": 0.1037866772402855,
+  "scenario_table": [
+    {
+      "scenario": "LOW",
+      "monthly churn (assumption)": 0.01,
+      "expected churners / month": 1000.0,
+      "monthly revenue lost to churn ($)": 58719.98484590209,
+      "score-threshold list size": 10572.802757845568,
+      "churners on list": 297.92171105730426,
+      "precision of list": 0.028178120587394002,
+      "random-list precision": 0.01,
+      "revenue of churners on list ($/mo)": 17493.958358550128
+    },
+    {
+      "scenario": "MEDIUM (central)",
+      "monthly churn (assumption)": 0.02,
+      "expected churners / month": 2000.0,
+      "monthly revenue lost to churn ($)": 117439.96969180417,
+      "score-threshold list size": 10766.937791662587,
+      "churners on list": 595.8434221146085,
+      "precision of list": 0.055340100745822254,
+      "random-list precision": 0.02,
+      "revenue of churners on list ($/mo)": 34987.916717100255
+    },
+    {
+      "scenario": "HIGH",
+      "monthly churn (assumption)": 0.027,
+      "expected churners / month": 2700.0,
+      "monthly revenue lost to churn ($)": 158543.95908393565,
+      "score-threshold list size": 10902.832315334499,
+      "churners on list": 804.3886198547215,
+      "precision of list": 0.07377795022339044,
+      "random-list precision": 0.027,
+      "revenue of churners on list ($/mo)": 47233.68756808534
+    }
+  ],
+  "acceptance_feasibility": [
+    {
+      "design": "Design A (score-threshold list)",
+      "overall acceptance a": 0.1,
+      "list precision p": 0.05534010074582225,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.1
+    },
+    {
+      "design": "Design A (score-threshold list)",
+      "overall acceptance a": 0.2,
+      "list precision p": 0.05534010074582225,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.2
+    },
+    {
+      "design": "Design A (score-threshold list)",
+      "overall acceptance a": 0.3,
+      "list precision p": 0.05534010074582225,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.3
+    },
+    {
+      "design": "Design A (score-threshold list)",
+      "overall acceptance a": 0.5,
+      "list precision p": 0.05534010074582225,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.5
+    },
+    {
+      "design": "Design A (score-threshold list)",
+      "overall acceptance a": 0.7,
+      "list precision p": 0.05534010074582225,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.7
+    },
+    {
+      "design": "Design B (calibrated value top 2%)",
+      "overall acceptance a": 0.1,
+      "list precision p": 0.05400885258196844,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.1
+    },
+    {
+      "design": "Design B (calibrated value top 2%)",
+      "overall acceptance a": 0.2,
+      "list precision p": 0.05400885258196844,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.2
+    },
+    {
+      "design": "Design B (calibrated value top 2%)",
+      "overall acceptance a": 0.3,
+      "list precision p": 0.05400885258196844,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.3
+    },
+    {
+      "design": "Design B (calibrated value top 2%)",
+      "overall acceptance a": 0.5,
+      "list precision p": 0.05400885258196844,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.5
+    },
+    {
+      "design": "Design B (calibrated value top 2%)",
+      "overall acceptance a": 0.7,
+      "list precision p": 0.05400885258196844,
+      "max feasible uplift min(1, a/p)": 1.0,
+      "old (wrong) cap u <= a": 0.7
+    }
+  ],
+  "chart_data": {
+    "churn_by_month": [
+      {
+        "month": 6,
+        "rate": 0.3837837837837838,
+        "n": 1295,
+        "churners": 497,
+        "ci_low": 0.3576780601657833,
+        "ci_high": 0.4105769505163531
+      },
+      {
+        "month": 7,
+        "rate": 0.33259690700943967,
+        "n": 4979,
+        "churners": 1656,
+        "ci_low": 0.31964367044397635,
+        "ci_high": 0.3458082581842056
+      },
+      {
+        "month": 8,
+        "rate": 0.309549356223176,
+        "n": 3728,
+        "churners": 1154,
+        "ci_low": 0.294911488974991,
+        "ci_high": 0.3245793131748045
+      },
+      {
+        "month": 9,
+        "rate": 0.2879980324643384,
+        "n": 4066,
+        "churners": 1171,
+        "ci_low": 0.27428453428377697,
+        "ci_high": 0.3021117412361156
+      },
+      {
+        "month": 10,
+        "rate": 0.4027359146765592,
+        "n": 4313,
+        "churners": 1737,
+        "ci_low": 0.3881917368981562,
+        "ci_high": 0.41745319864015185
+      },
+      {
+        "month": 11,
+        "rate": 0.6512641673931997,
+        "n": 8029,
+        "churners": 5229,
+        "ci_low": 0.6407698356197814,
+        "ci_high": 0.6616138243157407
+      },
+      {
+        "month": 12,
+        "rate": 0.6185977125808055,
+        "n": 6033,
+        "churners": 3732,
+        "ci_low": 0.6062691088561395,
+        "ci_high": 0.6307753803459254
+      },
+      {
+        "month": 13,
+        "rate": 0.5544151477614582,
+        "n": 5651,
+        "churners": 3133,
+        "ci_low": 0.5414236304435958,
+        "ci_high": 0.5673327342535424
+      },
+      {
+        "month": 14,
+        "rate": 0.5303163444639719,
+        "n": 4552,
+        "churners": 2414,
+        "ci_low": 0.5157985693380231,
+        "ci_high": 0.5447829944619262
+      },
+      {
+        "month": 15,
+        "rate": 0.5235984354628422,
+        "n": 3835,
+        "churners": 2008,
+        "ci_low": 0.5077756518333504,
+        "ci_high": 0.539373990042093
+      },
+      {
+        "month": 16,
+        "rate": 0.5102777777777778,
+        "n": 3600,
+        "churners": 1837,
+        "ci_low": 0.4939459418814055,
+        "ci_high": 0.5265877027990172
+      },
+      {
+        "month": 17,
+        "rate": 0.5155492154065621,
+        "n": 3505,
+        "churners": 1807,
+        "ci_low": 0.4989963490282258,
+        "ci_high": 0.5320680354072667
+      },
+      {
+        "month": 18,
+        "rate": 0.5099337748344371,
+        "n": 3020,
+        "churners": 1540,
+        "ci_low": 0.4921034007377495,
+        "ci_high": 0.527738909388986
+      }
+    ],
+    "odds_ratios_M3": {
+      "In months 10-12": 1.921849626004194,
+      "Tenure (log)": 1.0791695453734853,
+      "Handset age (+1 year)": 1.3364660561002832,
+      "Handset price (+$100)": 0.8588667219362062,
+      "Monthly revenue (log)": 1.2231753044379334,
+      "Monthly minutes (log)": 0.8548847440069459,
+      "Usage change (+100 pts)": 0.9560991322646938,
+      "Care calls (log)": 0.9280006963537719,
+      "Dropped/blocked calls (log)": 1.1034193695786967,
+      "Refurbished handset": 1.2559879017776128
+    },
+    "tenure_handset_heatmap": {
+      "index": [
+        "6-9",
+        "10-12",
+        "13-24",
+        "25+"
+      ],
+      "columns": [
+        "<6m",
+        "6-12m",
+        "12-18m",
+        "18-24m",
+        "24m+"
+      ],
+      "values": [
+        [
+          0.33473684210526317,
+          0.3149747712306508,
+          null,
+          null,
+          null
+        ],
+        [
+          0.5508072174738842,
+          0.5891591382904795,
+          0.5811138014527845,
+          null,
+          null
+        ],
+        [
+          0.4380063835011048,
+          0.5084325396825397,
+          0.5432171110460006,
+          0.5406167400881057,
+          0.5736434108527132
+        ],
+        [
+          0.3326877555412094,
+          0.4357396449704142,
+          0.4936864798275331,
+          0.5394149727317799,
+          0.5790770397043494
+        ]
+      ]
+    },
+    "shap_tenure": {
+      "6": -0.22609735832759317,
+      "7": -0.27516209368890315,
+      "8": -0.28594943180081545,
+      "9": -0.29668930033498453,
+      "10": -0.20284837861560173,
+      "11": 0.4026371877501484,
+      "12": 0.37004502715317267,
+      "13": 0.20794613800812717,
+      "14": 0.16341069204278483,
+      "15": 0.12273690894330941,
+      "16": 0.09761049795627545,
+      "17": 0.09067181832132983,
+      "18": 0.04976722580647425,
+      "19": 0.01568392972044397,
+      "20": 0.01585802638849407,
+      "21": -0.010421075332120487,
+      "22": -0.009905527292817578,
+      "23": -0.014268123887386642,
+      "24": -0.022098436809692673,
+      "25": -0.036919905865605,
+      "26": -0.03817892325087829,
+      "27": -0.0397504490282583,
+      "28": -0.04210013483316356,
+      "29": -0.05026603175769074,
+      "30": -0.04971685254600336,
+      "31": -0.05327132741086235,
+      "32": -0.05092140773925205,
+      "33": -0.0631060228144319,
+      "34": -0.10307678396177784,
+      "35": -0.09961052261814951,
+      "36": -0.11772512581574572
+    },
+    "shap_handset": {
+      "0-90": -0.21700652123391104,
+      "90-180": -0.20123198248948163,
+      "180-270": -0.26233719451519943,
+      "270-365": 0.02535824843967403,
+      "365-450": 0.11038360156487825,
+      "450-540": 0.11405901624222804,
+      "540-730": 0.12510269220062323,
+      "730-1000": 0.14216799984135664,
+      "1000-2000": 0.20327255261627555
+    },
+    "shap_importance_top10": {
+      "Handset age (days)": 0.17502818395109174,
+      "Change in minutes vs 3-mo avg": 0.15957601014227782,
+      "Tenure (months)": 0.15783466243096547,
+      "Revenue per minute": 0.13794420128807514,
+      "Credit class": 0.0922114603080214,
+      "Monthly recurring charge": 0.08864116766881405,
+      "Subscribers in household": 0.08609492695605409,
+      "Monthly minutes": 0.08228478000732685,
+      "Handset price": 0.07768303411468418,
+      "Avg monthly calls (lifetime)": 0.07624922189298691
+    },
+    "gains_test": [
+      {
+        "pct_contacted": 5,
+        "pct_churners": 0.0852502017756255
+      },
+      {
+        "pct_contacted": 10,
+        "pct_churners": 0.16152138821630346
+      },
+      {
+        "pct_contacted": 15,
+        "pct_churners": 0.23052865213882162
+      },
+      {
+        "pct_contacted": 20,
+        "pct_churners": 0.29792171105730425
+      },
+      {
+        "pct_contacted": 25,
+        "pct_churners": 0.35966505246166264
+      },
+      {
+        "pct_contacted": 30,
+        "pct_churners": 0.42110573042776434
+      },
+      {
+        "pct_contacted": 35,
+        "pct_churners": 0.4781073446327684
+      },
+      {
+        "pct_contacted": 40,
+        "pct_churners": 0.5338983050847458
+      },
+      {
+        "pct_contacted": 45,
+        "pct_churners": 0.5887812752219532
+      },
+      {
+        "pct_contacted": 50,
+        "pct_churners": 0.639729620661824
+      },
+      {
+        "pct_contacted": 55,
+        "pct_churners": 0.6897699757869249
+      },
+      {
+        "pct_contacted": 60,
+        "pct_churners": 0.7367836965294592
+      },
+      {
+        "pct_contacted": 65,
+        "pct_churners": 0.7813761097659403
+      },
+      {
+        "pct_contacted": 70,
+        "pct_churners": 0.8229418886198547
+      },
+      {
+        "pct_contacted": 75,
+        "pct_churners": 0.8600686037126715
+      },
+      {
+        "pct_contacted": 80,
+        "pct_churners": 0.8970944309927361
+      },
+      {
+        "pct_contacted": 85,
+        "pct_churners": 0.930589184826473
+      },
+      {
+        "pct_contacted": 90,
+        "pct_churners": 0.9614608555286521
+      },
+      {
+        "pct_contacted": 95,
+        "pct_churners": 0.9854721549636803
+      },
+      {
+        "pct_contacted": 100,
+        "pct_churners": 1.0
+      }
+    ],
+    "depth_curve": [
+      {
+        "depth": 0.01,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 1.215970384035931,
+        "list precision": 0.11672901858087043
+      },
+      {
+        "depth": 0.01,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 0.6917792424647499,
+        "list precision": 0.05808703746800092
+      },
+      {
+        "depth": 0.02,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 1.3647343604942233,
+        "list precision": 0.09490166933993102
+      },
+      {
+        "depth": 0.02,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 0.8611477907716149,
+        "list precision": 0.05400885258196844
+      },
+      {
+        "depth": 0.03,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 1.5201440271868802,
+        "list precision": 0.08378684371333639
+      },
+      {
+        "depth": 0.03,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 1.027579643764131,
+        "list precision": 0.04961840779519078
+      },
+      {
+        "depth": 0.05,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 1.7236246300705633,
+        "list precision": 0.07105593095384556
+      },
+      {
+        "depth": 0.05,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 1.2495407794275715,
+        "list precision": 0.04491681835009316
+      },
+      {
+        "depth": 0.075,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 1.9265914792834513,
+        "list precision": 0.0620965902875125
+      },
+      {
+        "depth": 0.075,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 1.4359595690537261,
+        "list precision": 0.04298328087620724
+      },
+      {
+        "depth": 0.1,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 2.1192366525677966,
+        "list precision": 0.05630274156171794
+      },
+      {
+        "depth": 0.1,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 1.6344160376084929,
+        "list precision": 0.04011649785318968
+      },
+      {
+        "depth": 0.15,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 2.375715467224757,
+        "list precision": 0.0489476355400203
+      },
+      {
+        "depth": 0.15,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 1.9448586014597802,
+        "list precision": 0.03712082400729105
+      },
+      {
+        "depth": 0.2,
+        "ranking": "Risk-ranked",
+        "break-even uplift": 2.6404046540595605,
+        "list precision": 0.04402818702330596
+      },
+      {
+        "depth": 0.2,
+        "ranking": "Value-ranked (risk \u00d7 revenue)",
+        "break-even uplift": 2.2004762362926202,
+        "list precision": 0.03520737584739134
+      }
+    ]
+  },
+  "extra": {
+    "churn_month10": 0.4027359146765592,
+    "churn_month12": 0.6185977125808055,
+    "window_OR_M1": 1.8654280125543885,
+    "window_OR_M2": 1.8868408786362347,
+    "max_single_feature_auc": 0.5739759638966161,
+    "shap_top4": [
+      "Handset age (days)",
+      "Change in minutes vs 3-mo avg",
+      "Tenure (months)",
+      "Revenue per minute"
+    ],
+    "example_customers": {
+      "A: in months 10\u201312": {
+        "months": 11,
+        "p": 0.8961290441440833,
+        "change_mou": -123.0,
+        "rev": 51.9375
+      },
+      "B: long tenure, old handset": {
+        "months": 28,
+        "p": 0.900705672908176,
+        "change_mou": -180.25,
+        "rev": 50.69
+      }
+    }
+  }
+}
